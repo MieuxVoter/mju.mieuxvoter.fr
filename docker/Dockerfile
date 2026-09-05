@@ -27,4 +27,4 @@ WORKDIR /app
 COPY --from=builder /build/build/mju ./
 COPY --from=builder /build/.env ./
 COPY --from=builder /build/.env.local ./
-CMD ["/app/mpa"]
+CMD ["/app/mju"]
