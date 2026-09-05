@@ -1,0 +1,119 @@
+:root {
+    --main-color: #efefff;
+    --main-bg-color: #2400fd;
+    --main-color-dim: hsl(from var(--main-color) h s calc(l - 20));
+    /*--main-color-dimmer: hsl(from var(--main-color) h s calc(l - 40));*/
+    --link-color: inherit;
+    --link-visited-color: inherit;
+    --link-hover-color: inherit;
+    --link-active-color: inherit;
+}
+@media screen and (prefers-color-scheme: dark) {
+    :root {
+        /*--main-color: #e3e3e3;*/
+        /*--main-bg-color: #1c1c1c;*/
+        /*--main-color-dim: hsl(from var(--main-color) h s calc(l - 20));*/
+        /*--main-color-dimmer: hsl(from var(--main-color) h s calc(l - 40));*/
+    }
+}
+@media print {
+    :root {
+        --main-color: #2c2c2c;
+        --main-bg-color: #ffffff;
+    }
+}
+@font-face {
+    font-family: 'DM Serif Display';
+    font-style: normal;
+    font-weight: normal;
+    src: local('DM Serif Display'), url('../font/DMSerifDisplay-Regular.woff') format('woff');
+}
+body, textarea, input {
+    color: var(--main-color);
+    background-color: var(--main-bg-color);
+    font-family: sans-serif;
+}
+textarea {
+    width: 100%;
+    margin: 1em 0;
+    font-size: 1.618em;
+    font-family: monospace;
+}
+fieldset {
+    margin: 0.5em 0;
+    border-width: 0;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: "DM Serif Display",serif;
+}
+a:link { color: var(--link-color); }
+a:visited { color: var(--link-visited-color); }
+a:hover { color: var(--link-hover-color); }
+a:active { color: var(--link-active-color); }
+label {
+    cursor: pointer;
+}
+input[type=text] {
+    border-color: var(--main-color-dim);
+    border-width: 0 0 medium 0;
+}
+input[type=text]:hover,
+input[type=text]:focus {
+    border-color: var(--main-color);
+}
+input[type=text]::placeholder {
+    color: var(--main-color-dim);
+}
+button[type=submit],
+input[type=submit] {
+    margin: 1em auto;
+    padding: 0.62em 1em;
+    cursor: pointer;
+    border-width: thin thin thick thin;
+    /* I'm not sure why this is not behaving as expected */
+    border-color: var(--main-color);
+}
+button[type=submit]:hover,
+input[type=submit]:hover {
+    color: var(--main-bg-color);
+    background-color: var(--main-color);
+    border-color: var(--main-color);
+}
+label:has(input[disabled]) {
+    opacity: 0.618;
+}
+ul.inline li {
+    display: inline-flex;
+}
+li {
+    padding-top: 0.618em;
+}
+
+/* FOOTER */
+footer {
+    font-size: 0.8em;
+}
+
+/* MV CUSTOMIZATION */
+body {
+    min-height: 90vh;
+    background-image: url("/img/chevron-bicolore.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-x: calc(100% + 50px);
+    background-position-y: 0;
+}
+input.proposal-name,
+input.proposal-tally {
+    font-family: monospace;
+}
+
+/* FORM SHENANIGANS */
+fieldset.proposal {
+    display: none;
+}
+fieldset.proposal:nth-of-type(-n+3),
+fieldset.proposal:has(> input:not(:placeholder-shown)),
+fieldset.proposal:has(> input:not(:placeholder-shown)) + fieldset.proposal {
+    display: revert;
+}

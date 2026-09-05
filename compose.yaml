@@ -1,0 +1,27 @@
+# Usage
+# =====
+#
+# Run:
+#
+#     docker compose up --detach
+#
+# Note: if you make changes in your .env.local file you will need to rebuild the container.
+# If you make changes to the Go source files, you need to rebuild as well:
+#
+#     docker compose --progress plain up --build --force-recreate
+#
+
+services:
+
+  # The app itself, a single Golang-built binary running in a hardened Debian.
+  app:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile
+      target: runner
+    restart: unless-stopped
+    volumes:
+      - "./docker/volumes/var/:/app/var/"
+    ports:
+      # Pitfall: WEB_PORT resolution uses .env but NOT .env.local
+      - "${WEB_PORT:-8034}:${WEB_PORT:-8034}"

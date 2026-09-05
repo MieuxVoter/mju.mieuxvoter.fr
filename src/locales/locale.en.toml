@@ -1,0 +1,72 @@
+[AppTitle]
+other = "Majority Judgment Urn"
+
+[AppDescription]
+other = "Companion website of the voting Android App named Majority Judgment Urn"
+
+[Judgment]
+zero = "judgments"
+one = "judgment"
+other = "judgments"
+
+[Grade]
+zero = "grades"
+one = "grade"
+other = "grades"
+
+#[ActionGenerate]
+#other = "Generate"
+#
+#[InstructionProvideTallies]
+#other = "Provide the tallies below or {{.Value0}} instead."
+#
+#[InstructionUploadCsvFile]
+#other = "Upload a CSV below or {{.Value0}} instead."
+#
+#[LinkUploadCsvFile]
+#other = "upload a CSV file"
+#
+#[LinkProvideTallies]
+#other = "directly provide the tallies"
+#
+#[SettingRankWithMjLabel]
+#other = "Rank using Majority Judgment"
+#
+#[SettingRankWithMjTitle]
+#other = "If checked, the generated merit profiles will be sorted from highest to lowest."
+#
+#[SettingHighToLowLabel]
+#other = "Read Highest Grade → Lowest Grade"
+#
+#[SettingHighToLowTitle]
+#other = "By default, this tool expects grades amounts from the lowest grade to the highest grade.  If checked, the order of the input grades amounts is reversed."
+#
+#[FieldProposalNameTitle]
+#other = "Name of the proposal #{{.Value0}}"
+#
+#[FieldProposalTallyTitle]
+#other = "Tally of the grades received by the proposal #{{.Value0}}, from lowest (worst) grade to highest (best) grade, separated by commas (,)"
+#
+#[FieldCsvFileLabel]
+#other = "Upload a CSV file:"
+#
+#[FieldCsvFileInfo]
+#other = "Your CSV file should look something like this:"
+#
+#[FieldCsvFileInfoTitle]
+#other = "This is only an example.  Your file may have more grades (more columns), and of course more candidates (more rows)."
+#
+#[LinkSourceCodeTitle]
+#other = "Browse the source code, report issues and contribute."
+#
+#[ProposalNamePlaceholders]
+#other = "Arancini,Burger,Chips,Dal,Empanadas,Fries,Gnocchis,Kale,Lasagna,Makis,Noodles,Oatmeal,Pizza,Rice,Soup,Tacos,Veggies"
+#
+#[ErrorTallyInconsistent]
+#other = "The amount of grades is different amongst proposals.  Please make sure your tallies are consistent."
+#
+#[ErrorTallyImbalanced]
+#other = "The total amount of judgments is different amongst proposals.  Please make sure your tallies are balanced."
+#
+#[ErrorNoCsvFile]
+#other = "No CSV file was provided.  Please provide a CSV file."

@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap: https://mju.mieuxvoter.fr/sitemap.xml

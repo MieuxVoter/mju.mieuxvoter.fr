@@ -1,0 +1,26 @@
+[
+  {
+    "relation": [
+      "delegate_permission/common.handle_all_urls"
+    ],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "fr.mieuxvoter.urn",
+      "sha256_cert_fingerprints": [
+        "75:DF:18:56:85:89:C9:64:C9:5F:A2:13:1B:B4:E4:9F:21:8D:4B:DD:0E:3F:D9:D7:35:C0:28:CA:B0:D5:52:3F"
+      ]
+    }
+  },
+  {
+    "relation": [
+      "delegate_permission/common.handle_all_urls"
+    ],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.illiouchine.jm",
+      "sha256_cert_fingerprints": [
+        "75:DF:18:56:85:89:C9:64:C9:5F:A2:13:1B:B4:E4:9F:21:8D:4B:DD:0E:3F:D9:D7:35:C0:28:CA:B0:D5:52:3F"
+      ]
+    }
+  }
+]

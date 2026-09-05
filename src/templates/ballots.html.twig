@@ -1,0 +1,20 @@
+{% extends "base.html.twig" %}
+
+{% block content %}
+
+    <h3>Import Ballots</h3>
+
+    {% include "hero.html.twig" %}
+
+    <div>
+        <ol>
+            <li>
+                {% include "download.html.twig" %}
+            </li>
+            <li>
+                <a href="{{ url }}">Open this link again to import the ballots once the app has installed.</a>
+            </li>
+        </ol>
+    </div>
+
+{% endblock %}
