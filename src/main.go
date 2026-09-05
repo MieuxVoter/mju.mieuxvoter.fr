@@ -140,10 +140,10 @@ func handleServerError(err error, writer http.ResponseWriter) {
 	_, _ = writer.Write([]byte(err.Error()))
 }
 
-func handleUserError(err error, writer http.ResponseWriter) {
-	writer.WriteHeader(401)
-	_, _ = writer.Write([]byte(err.Error()))
-}
+//func handleUserError(err error, writer http.ResponseWriter) {
+//	writer.WriteHeader(401)
+//	_, _ = writer.Write([]byte(err.Error()))
+//}
 
 // loadDotEnv loads Environment variables from files, for convenience.
 func loadDotEnv() {
