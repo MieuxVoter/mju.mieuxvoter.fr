@@ -14,7 +14,7 @@ https://github.com/MieuxVoter/majority-judgment-offline-urn-android
 
 We might also redirect users to places where they can download the app.
 
-> That's pretty much it.  This website could just be static files.
+> That's pretty much it.  This website could just be static files and some nginx rules.
 
 
 ## Developers — Run locally
